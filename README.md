@@ -1,0 +1,1 @@
+# windowscross_vcpkg
