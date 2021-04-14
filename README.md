@@ -55,6 +55,7 @@ vcpkg install zlib:x86-windows-mytriplet fmt:x64-windows-mytriplet
 ### Using cross-compiled vcpkg libraries with CMake
 Build you own CMakeLists.txt and call it with the CMAKE_TOOLCHAIN_FILE and vcpkg variables:
 ```
+export HOST_ARCH=x86
 cmake -G Ninja -Wno-dev -DCMAKE_BUILD_TYPE=Release "-DVCPKG_TARGET_TRIPLET=x86-windows-mytriplet" "-DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake" "-DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=/clang_windows_sdk/clang-cl-msvc.cmake" -S . -B out
 cmake --build out
 cmake --install out
