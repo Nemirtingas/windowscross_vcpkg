@@ -23,4 +23,4 @@ RUN cd / &&\
     cd /vcpkg &&\
     ./bootstrap-vcpkg.sh -disableMetrics &&\
     ln -s /vcpkg/vcpkg /usr/bin/ &&\
-    ln -s /vcpkg/downloads/tools/cmake-*-linux/cmake-*-Linux-x86_64/bin/cmake /usr/bin/
+    ln -s /vcpkg/downloads/tools/cmake-*/cmake-*/bin/cmake /usr/bin/
