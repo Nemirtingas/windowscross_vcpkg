@@ -1,6 +1,6 @@
 ARG CLANG_VER
 ARG UBUNTU_VER
-FROM nemirtingas_compilation_base:ubuntu${UBUNTU_VER}_clang${CLANG_VER}
+FROM nemirtingas/nemirtingas_compilation_base:ubuntu${UBUNTU_VER}_clang${CLANG_VER}
 ARG MSVC_VER
 ARG WINSDK_VER
 ENV MSVC_BASE=/clang_windows_sdk/msvc

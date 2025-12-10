@@ -33,4 +33,5 @@ trap cleanup INT
 # Start building your docker image: build_image "repository" "msvc version" "window sdk version" "clang/llvm version"
 #build_image "windowscross_vcpkg" "22.04" "msvc2019" "10.0.18362.0" "17"
 #build_image "windowscross_vcpkg" "22.04" "msvc2022_14.40.33807" "10.0.18362.0" "18"
-build_image "windowscross_vcpkg" "22.04" "msvc2022_14.40.33807" "10.0.22621.0" "20"
+#build_image "windowscross_vcpkg" "22.04" "msvc2022_14.40.33807" "10.0.22621.0" "20"
+build_image "windowscross_vcpkg" "22.04" "msvc2022_14.44.35207" "10.0.26100.0" "22"
